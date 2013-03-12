@@ -1,0 +1,17 @@
+# ******************************************************************************
+ # *  Design:
+ # *        NF_QDR
+ # *  
+ # *  File:
+ # *        README
+ # *
+ # *  Pcore:
+ # *        flow_capture_qdrii
+ # *
+ # *  Authors:
+ # *        Marco Forconesi, Gustavo Sutter, Sergio Lopez-Buedo
+ # *
+ # *  Description:
+ # *          Pcore with AXI4-Stream interfaces. To be integrated in the Xilinx
+ # *          EDK NetFPGA Project.
+# ******************************************************************************

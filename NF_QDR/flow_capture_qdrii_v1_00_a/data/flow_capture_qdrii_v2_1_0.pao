@@ -1,0 +1,50 @@
+# ******************************************************************************
+ # *  Design:
+ # *        NF_BRAM
+ # *  
+ # *  File:
+ # *        flow_capture_qdrii_v2_1_0.pao
+ # *
+ # *  Pcore:
+ # *        flow_capture_qdrii
+ # *
+ # *  Authors:
+ # *        Marco Forconesi, Gustavo Sutter, Sergio Lopez-Buedo
+ # *
+ # *  Description:
+ # *          VHDL sources files listed in the right order for synthesis
+# ******************************************************************************
+
+lib flow_capture_qdrii_v1_00_a qdrii_phy_en vhdl
+lib flow_capture_qdrii_v1_00_a qdrii_phy_dly_cal_sm vhdl
+lib flow_capture_qdrii_v1_00_a qdrii_phy_init_sm vhdl
+lib flow_capture_qdrii_v1_00_a qdrii_phy_v5_q_io vhdl
+lib flow_capture_qdrii_v1_00_a qdrii_phy_q_io vhdl
+lib flow_capture_qdrii_v1_00_a qdrii_phy_cq_io vhdl
+lib flow_capture_qdrii_v1_00_a qdrii_phy_read vhdl
+lib flow_capture_qdrii_v1_00_a qdrii_phy_d_io vhdl
+lib flow_capture_qdrii_v1_00_a qdrii_phy_bw_io vhdl
+lib flow_capture_qdrii_v1_00_a qdrii_phy_write vhdl
+lib flow_capture_qdrii_v1_00_a qdrii_phy_clk_io vhdl
+lib flow_capture_qdrii_v1_00_a qdrii_phy_addr_io vhdl
+lib flow_capture_qdrii_v1_00_a qdrii_top_phy vhdl
+lib flow_capture_qdrii_v1_00_a qdrii_top_ctrl_sm vhdl
+lib flow_capture_qdrii_v1_00_a qdrii_top_wrdata_bw_fifo vhdl
+lib flow_capture_qdrii_v1_00_a qdrii_top_wrdata_fifo vhdl
+lib flow_capture_qdrii_v1_00_a qdrii_top_wr_data_interface vhdl
+lib flow_capture_qdrii_v1_00_a qdrii_top_wr_addr_interface vhdl
+lib flow_capture_qdrii_v1_00_a qdrii_top_wr_interface vhdl
+lib flow_capture_qdrii_v1_00_a qdrii_top_rd_addr_interface vhdl
+lib flow_capture_qdrii_v1_00_a qdrii_top_rd_interface vhdl
+lib flow_capture_qdrii_v1_00_a qdrii_top_user_interface vhdl
+lib flow_capture_qdrii_v1_00_a qdrii_top vhdl
+lib flow_capture_qdrii_v1_00_a qdrii_infrastructure vhdl
+lib flow_capture_qdrii_v1_00_a qdrii_idelay_ctrl vhdl
+lib flow_capture_qdrii_v1_00_a qdrii_chipscope vhdl
+lib flow_capture_qdrii_v1_00_a mem1 vhdl
+lib flow_capture_qdrii_v1_00_a create_update_erase_flows vhdl
+lib flow_capture_qdrii_v1_00_a export_flows vhdl
+lib flow_capture_qdrii_v1_00_a hash_function vhdl
+lib flow_capture_qdrii_v1_00_a pkt_classification vhdl
+lib flow_capture_qdrii_v1_00_a write_to_mem vhdl
+lib flow_capture_qdrii_v1_00_a flow_capture_qdrii vhdl

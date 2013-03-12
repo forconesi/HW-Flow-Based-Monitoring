@@ -1,0 +1,102 @@
+# ******************************************************************************
+ # *  Design:
+ # *        NF_BRAM
+ # *  
+ # *  File:
+ # *        flow_capture_qdrii_v2_1_0.mpd
+ # *
+ # *  Pcore:
+ # *        flow_capture_qdrii
+ # *
+ # *  Authors:
+ # *        Marco Forconesi, Gustavo Sutter, Sergio Lopez-Buedo
+ # *
+ # *  Description:
+ # *          Microprocessor Peripheral Definition file for EDK
+# ******************************************************************************
+
+BEGIN flow_capture_qdrii
+
+## Peripheral Options
+OPTION IPTYPE = PERIPHERAL
+OPTION IMP_NETLIST = TRUE
+OPTION HDL = VHDL
+
+BUS_INTERFACE BUS = S_AXIS_10GMAC, BUS_STD=AXIS, BUS_TYPE=TARGET
+BUS_INTERFACE BUS=M_AXIS_10GMAC, BUS_STD=AXIS, BUS_TYPE=INITIATOR
+
+
+## Parameters
+PARAMETER C_S_AXIS_10GMAC_PROTOCOL = GENERIC, DT = string, TYPE = NON_HDL, ASSIGNMENT = CONSTANT, BUS = S_AXIS_10GMAC
+PARAMETER C_M_AXIS_10GMAC_PROTOCOL = GENERIC, DT = string, TYPE = NON_HDL, ASSIGNMENT = CONSTANT, BUS = M_AXIS_10GMAC
+
+## Peripheral ports
+PORT ACLK = "", DIR=I, SIGIS=CLK, BUS = S_AXIS_10GMAC:M_AXIS_10GMAC
+PORT clk180 = "", DIR=I, SIGIS=CLK
+PORT clk270 = "", DIR=I, SIGIS=CLK
+PORT ARESETN = "", DIR = I, SIGIS = RST
+PORT dcm_locked = "", DIR=I
+
+## AXI-Stream Interface. 10GMAC Slave Interface
+
+PORT s_axis_tdata = TDATA, DIR = I, VEC = [64-1:0], BUS = S_AXIS_10GMAC, ENDIAN = LITTLE
+PORT s_axis_tstrb = TSTRB, DIR = I, VEC = [(64/8)-1:0], BUS = S_AXIS_10GMAC, ENDIAN = LITTLE
+PORT s_axis_tvalid = TVALID, DIR = I, BUS = S_AXIS_10GMAC
+PORT s_axis_tready = TREADY, DIR = O, BUS = S_AXIS_10GMAC
+PORT s_axis_tlast = TLAST, DIR = I, BUS = S_AXIS_10GMAC
+
+PORT M_AXIS_10GMAC_tdata = TDATA, DIR = O, VEC = [64-1:0], BUS = M_AXIS_10GMAC, ENDIAN = LITTLE
+PORT M_AXIS_10GMAC_tstrb = TSTRB, DIR = O, VEC = [(64/8)-1:0], BUS = M_AXIS_10GMAC, ENDIAN = LITTLE
+PORT M_AXIS_10GMAC_tvalid = TVALID, DIR = O, BUS = M_AXIS_10GMAC
+PORT M_AXIS_10GMAC_tready = TREADY, DIR = I, BUS = M_AXIS_10GMAC
+PORT M_AXIS_10GMAC_tlast = TLAST, DIR = O, BUS = M_AXIS_10GMAC
+
+##QDRII-A PORTS
+PORT	c0_masterbank_sel_pin  = "", DIR=I, VEC=[1-1:0] 
+PORT	c0_qdr_d  = "", DIR=O, VEC=[36-1:0]
+PORT	c0_qdr_q = "", DIR=I, VEC=[36-1:0]
+PORT	c0_qdr_sa = "", DIR=O, VEC=[19-1:0]
+PORT	c0_qdr_w_n = "", DIR=O
+PORT	c0_qdr_r_n  = "", DIR=O
+PORT	c0_qdr_dll_off_n = "", DIR=O
+PORT	c0_qdr_bw_n = "", DIR=O,VEC=[3:0]
+PORT	c0_qdr_cq  = "", DIR=I, VEC=[1-1:0]
+PORT	c0_qdr_cq_n  = "", DIR=I, VEC=[1-1:0]
+PORT 	c0_qdr_k = "", DIR=O, VEC=[0:0]
+PORT	c0_qdr_k_n = "", DIR=O, VEC=[0:0]
+PORT	c0_qdr_c  = "", DIR=O, VEC=[0:0]
+PORT	c0_qdr_c_n = "", DIR=O, VEC=[0:0]
+
+##QDRII-C PORTS
+PORT	c1_masterbank_sel_pin  = "", DIR=I, VEC=[1-1:0] 
+PORT	c1_qdr_d  = "", DIR=O, VEC=[36-1:0]
+PORT	c1_qdr_q = "", DIR=I, VEC=[36-1:0]
+PORT	c1_qdr_sa = "", DIR=O, VEC=[19-1:0]
+PORT	c1_qdr_w_n = "", DIR=O
+PORT	c1_qdr_r_n  = "", DIR=O
+PORT	c1_qdr_dll_off_n = "", DIR=O
+PORT	c1_qdr_bw_n = "", DIR=O,VEC=[3:0]
+PORT	c1_qdr_cq  = "", DIR=I, VEC=[1-1:0]
+PORT	c1_qdr_cq_n  = "", DIR=I, VEC=[1-1:0]
+PORT c1_qdr_k = "", DIR=O, VEC=[0:0]
+PORT	c1_qdr_k_n = "", DIR=O, VEC=[0:0]
+PORT	c1_qdr_c  = "", DIR=O, VEC=[0:0]
+PORT	c1_qdr_c_n = "", DIR=O, VEC=[0:0]
+
+##QDRII-B PORTS
+PORT	c2_masterbank_sel_pin  = "", DIR=I, VEC=[1-1:0] 
+PORT	c2_qdr_d  = "", DIR=O, VEC=[36-1:0]
+PORT	c2_qdr_q = "", DIR=I, VEC=[36-1:0]
+PORT	c2_qdr_sa = "", DIR=O, VEC=[19-1:0]
+PORT	c2_qdr_w_n = "", DIR=O
+PORT	c2_qdr_r_n  = "", DIR=O
+PORT	c2_qdr_dll_off_n = "", DIR=O
+PORT	c2_qdr_bw_n = "", DIR=O,VEC=[3:0]
+PORT	c2_qdr_cq  = "", DIR=I, VEC=[1-1:0]
+PORT	c2_qdr_cq_n  = "", DIR=I, VEC=[1-1:0]
+PORT c2_qdr_k = "", DIR=O, VEC=[0:0]
+PORT	c2_qdr_k_n = "", DIR=O, VEC=[0:0]
+PORT	c2_qdr_c  = "", DIR=O, VEC=[0:0]
+PORT	c2_qdr_c_n = "", DIR=O, VEC=[0:0]
+
+END
