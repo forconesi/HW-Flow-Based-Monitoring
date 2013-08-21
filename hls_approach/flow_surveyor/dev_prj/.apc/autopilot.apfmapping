@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="flow_surveyor.cpp" path="/home/marcof/Desktop/flow_surveyor/development/flow_surveyor/src/flow_surveyor.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="2flujos" path="/home/marcof/Desktop/flow_surveyor/development/flow_surveyor/src/2flujos"/>
+    <originFiles name="50_pkts" path="/home/marcof/Desktop/flow_surveyor/development/flow_surveyor/src/50_pkts"/>
+    <originFiles name="UnFlujoTCPconFin_tb" path="/home/marcof/Desktop/flow_surveyor/development/flow_surveyor/src/UnFlujoTCPconFin_tb"/>
+    <originFiles name="simple_test.cpp" path="/home/marcof/Desktop/flow_surveyor/development/flow_surveyor/src/simple_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

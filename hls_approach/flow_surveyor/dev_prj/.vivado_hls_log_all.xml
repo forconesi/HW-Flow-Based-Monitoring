@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="@W [IMPL-276] Only power-on reset is supported for RAM 'flow_surveyor_flow_table_xtuple_layer3protocol_V'." projectName="dev_prj" solutionName="solution1" date="2013-05-28T19:14:55.289+0200" type="Warning"/>
+        <logs message="@W [IMPL-276] Only power-on reset is supported for RAM 'flow_surveyor_flow_table_xtuple_src_port_V'." projectName="dev_prj" solutionName="solution1" date="2013-05-28T19:14:55.283+0200" type="Warning"/>
+        <logs message="@W [IMPL-276] Only power-on reset is supported for RAM 'flow_surveyor_flow_table_xtuple_src_ip_V'." projectName="dev_prj" solutionName="solution1" date="2013-05-28T19:14:55.278+0200" type="Warning"/>
+        <logs message="@W [IMPL-276] Only power-on reset is supported for RAM 'flow_surveyor_flow_table_location_busy_V'." projectName="dev_prj" solutionName="solution1" date="2013-05-28T19:14:55.271+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global scalar 'p_collision_counter' will not be exposed as RTL port." projectName="dev_prj" solutionName="solution1" date="2013-05-28T19:14:55.114+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global scalar 'p_pross_pkts' will not be exposed as RTL port." projectName="dev_prj" solutionName="solution1" date="2013-05-28T19:14:55.109+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'flow_table_pkt_coutner_V' will not be exposed as RTL port." projectName="dev_prj" solutionName="solution1" date="2013-05-28T19:14:55.103+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'flow_table_byte_coutner_V' will not be exposed as RTL port." projectName="dev_prj" solutionName="solution1" date="2013-05-28T19:14:55.097+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'flow_table_tcp_flags_V' will not be exposed as RTL port." projectName="dev_prj" solutionName="solution1" date="2013-05-28T19:14:55.093+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'flow_table_initial_timestamp_V' will not be exposed as RTL port." projectName="dev_prj" solutionName="solution1" date="2013-05-28T19:14:55.089+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'flow_table_last_timestamp_V' will not be exposed as RTL port." projectName="dev_prj" solutionName="solution1" date="2013-05-28T19:14:55.085+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'flow_table_xtuple_layer3protocol_V' will not be exposed as RTL port." projectName="dev_prj" solutionName="solution1" date="2013-05-28T19:14:55.081+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'flow_table_xtuple_des_port_V' will not be exposed as RTL port." projectName="dev_prj" solutionName="solution1" date="2013-05-28T19:14:55.078+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'flow_table_xtuple_src_port_V' will not be exposed as RTL port." projectName="dev_prj" solutionName="solution1" date="2013-05-28T19:14:55.074+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'flow_table_xtuple_des_ip_V' will not be exposed as RTL port." projectName="dev_prj" solutionName="solution1" date="2013-05-28T19:14:55.071+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'flow_table_xtuple_src_ip_V' will not be exposed as RTL port." projectName="dev_prj" solutionName="solution1" date="2013-05-28T19:14:55.068+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global scalar 'p_linear_address_counter_V' will not be exposed as RTL port." projectName="dev_prj" solutionName="solution1" date="2013-05-28T19:14:55.064+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'flow_table_location_busy_V' will not be exposed as RTL port." projectName="dev_prj" solutionName="solution1" date="2013-05-28T19:14:55.061+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global scalar 'p_init_hw' will not be exposed as RTL port." projectName="dev_prj" solutionName="solution1" date="2013-05-28T19:14:55.056+0200" type="Warning"/>
+        <logs message="@W [SYNCHK-23] flow_surveyor.cpp:108: variable-indexed range selection may cause suboptimal QoR." projectName="dev_prj" solutionName="solution1" date="2013-05-28T19:14:51.786+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="@W [IMPL-276] Only power-on reset is supported for RAM 'flow_surveyor_flow_table_xtuple_layer3protocol_V'." projectName="dev_prj" solutionName="solution1" date="2013-05-28T19:15:55.402+0200" type="Warning"/>
+        <logs message="@W [IMPL-276] Only power-on reset is supported for RAM 'flow_surveyor_flow_table_xtuple_src_port_V'." projectName="dev_prj" solutionName="solution1" date="2013-05-28T19:15:55.076+0200" type="Warning"/>
+        <logs message="@W [IMPL-276] Only power-on reset is supported for RAM 'flow_surveyor_flow_table_xtuple_src_ip_V'." projectName="dev_prj" solutionName="solution1" date="2013-05-28T19:15:55.069+0200" type="Warning"/>
+        <logs message="@W [IMPL-276] Only power-on reset is supported for RAM 'flow_surveyor_flow_table_location_busy_V'." projectName="dev_prj" solutionName="solution1" date="2013-05-28T19:15:55.063+0200" type="Warning"/>
+        <logs message="@W [IMPL-380] Function protocol signals are direct connections in the resulting pcore. You may want to make them accessible by software using appropriate directives." projectName="dev_prj" solutionName="solution1" date="2013-05-28T19:15:55.055+0200" type="Warning"/>
+        <logs message="@W [IMPL-276] Only power-on reset is supported for RAM 'flow_surveyor_flow_table_xtuple_layer3protocol_V'." projectName="dev_prj" solutionName="solution1" date="2013-05-28T19:15:55.018+0200" type="Warning"/>
+        <logs message="@W [IMPL-276] Only power-on reset is supported for RAM 'flow_surveyor_flow_table_xtuple_src_port_V'." projectName="dev_prj" solutionName="solution1" date="2013-05-28T19:15:55.012+0200" type="Warning"/>
+        <logs message="@W [IMPL-276] Only power-on reset is supported for RAM 'flow_surveyor_flow_table_xtuple_src_ip_V'." projectName="dev_prj" solutionName="solution1" date="2013-05-28T19:15:55.006+0200" type="Warning"/>
+        <logs message="@W [IMPL-276] Only power-on reset is supported for RAM 'flow_surveyor_flow_table_location_busy_V'." projectName="dev_prj" solutionName="solution1" date="2013-05-28T19:15:54.998+0200" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
